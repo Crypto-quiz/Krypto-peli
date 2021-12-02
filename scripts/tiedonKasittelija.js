@@ -1,97 +1,52 @@
 
-const vastaukset = [];
-
-
 class TiedonKasittelija {
-
+    sivuteriteltyina = [];
+    sivutJSON;
     constructor() {
-       
-
+        
     }
 
-    noudaVastausJSON() {
-        return vastausJSON;
+    
+    noudaJSON = function () {
+        this.sivutJSON = JSON.parse(
+            '{"sivut":[{"sivunid":0,"sivuntyypi":"tarina","sivuntekstit":[{"tekstintyyppi":"tarina","teksti":"Minulla on tilill‰ni rahaa 100 000 Euroa. Kuinka suuri osa siit‰ minun kannattaisi sijoittaa kryptovaluuttaan?"}],"sivunvalinnat":[{"valinnantyyppi":"vastaus1","valinnanteksti":"10%","seuraavasivu":2},{"valinnantyyppi":"vastaus2","valinnanteksti":"100%","seuraavasivu":1}],"sivunkuva":""},{"sivunid":1,"sivuntyypi":"palaute","sivuntekstit":[{"tekstintyyppi":"selitys","teksti":"Jarmon sijoitukset eiv‰t tuottaneet mit‰‰n takaisin, joten h‰n joutui myym‰‰n talonsa. ƒl‰ koskaan sijoita kaikkia rahoja, oli kyse sitten kryptovaluutasta tai muista osakkeista. Toki in aina mahdollista, ett‰ omaisuutesi voi kertaheitolla moninkertaistua, mutta koko omaisuuden menett‰minen on hirve‰ riski."}],"sivunvalinnat":[{"valinnantyyppi":"seuraava","valinnanteksti":"Aloita alusta","seuraavasivu":0}],"sivunkuva":""},{"sivunid":2,"sivuntyypi":"palaute","sivuntekstit":[{"tekstintyyppi":"selitys","teksti":"Hyv‰! Sijoituksiin kannattaa laittaa maltillinen m‰‰r‰ rahaa, jonka menett‰minen ei tuota taloudellisia vaikeuksia, jos satut menett‰m‰‰n sen."}],"sivunvalinnat":[{"valinnantyyppi":"seuraava","valinnanteksti":"Seuraava sivu","seuraavasivu":3}],"sivunkuva":""},{"sivunid":3,"sivuntyypi":"tarina","sivuntekstit":[{"tekstintyyppi":"tarina","teksti":"Olen nyt p‰‰tt‰nyt sijoittaa 10 000 euroa kryptovaluuttaan. Kannattaako rahat sijoittaa yhteen vai useisiin valuuttoihin?"}],"sivunvalinnat":[{"valinnantyyppi":"vastaus1","valinnanteksti":"Yhteen valuuttaan","seuraavasivu":4},{"valinnantyyppi":"vastaus2","valinnanteksti":"Useaan valuuttaan","seuraavasivu":5}],"sivunkuva":""},{"sivunid":4,"sivuntyypi":"tarina","sivuntekstit":[{"tekstintyyppi":"tarina","teksti":"Sijoitan nyt sijoitussalkkuni varat vain yhteen kryptovaluuttaa. Mink‰ valuutan valitsisin?"}],"sivunvalinnat":[{"valinnantyyppi":"vastaus1","valinnanteksti":"Bitcoin","seuraavasivu":6},{"valinnantyyppi":"vastaus2","valinnanteksti":"Squid","seuraavasivu":7}],"sivunkuva":""},{"sivunid":5,"sivuntyypi":"tarina","sivuntekstit":[{"tekstintyyppi":"tarina","teksti":"Sijoitan nyt sijoitussalkkuni varat moneen eri valuuttaan. Millaisia kryptovaluuttoja kannattaa valita"}],"sivunvalinnat":[{"valinnantyyppi":"vastaus1","valinnanteksti":"Ei top 10-valuuttoihin kuuluvia, mutta sellaisia, joista h‰n on ottanut selv‰‰","seuraavasivu":7},{"valinnantyyppi":"vastaus2","valinnanteksti":"Hauskan nimisi‰ valuuttoja, jotka eiv‰t ole kovin tunnettuja","seuraavasivu":8}],"sivunkuva":""}]}'
+
+
+
+
+        )
+
     }
-
-    asetaVastausJSON(objekti) {
-        this.vastausJSON = objekti;
+        
+    getSivu(id) {
+        return this.sivuteriteltyina[id];
     }
+    
 
 
+    luoSivut() {
+        
+        let sivutolio = this.sivutJSON;
+        console.log(this.sivutJSON);
 
-    noudaTiedot(valittavaKysymysID) {
+        let sivujenmaara = sivutolio.sivut.length;
+        for (let i = 0; i < sivujenmaara; i++) {
+            this.sivuteriteltyina.push(
+                new Sivu(
+                    sivutolio.sivut[i].sivunid, // sivun id
+                    sivutolio.sivut[i].sivuntyyppi, // sivun tyyppi
+                    sivutolio.sivut[i].sivuntekstit, // sivun tekstit yksi tai useampi 
+                    sivutolio.sivut[i].sivunvalinnat, // sivun valinnat
+                    sivutolio.sivut[i].sivunkuva  // sivun kuvan osoite
+                ));
 
-            // PHP palvelimele l‰hetett‰v‰t tiedot.
-            var arvot = {
-
-                id: valittavaKysymysID
-
-            };
-
-            console.log(valittavaKysymysID);
-
-            // Palauttaa lupauksen tapaisen objektin 
-            return $.ajax({
-
-                url: 'http://localhost/php/echo.php',
-                type: 'post',
-                //datatype: 'json',
-                data: arvot,
-
-                // "success" suoritetaan kuin lupaus ratkeaa onnistuneesti
-                success: function (vastaus) {
-
-                    // Vastaus tallennetaan myˆhemp‰‰ k‰sittely‰ varten.
-                    vastaukset.push(vastaus);
-                
-                    console.log(vastaukset);
-
-                },
-                 // "error" suoritetaan kuin lupaus ratkeaa ep‰onnistuneesi, esimerkiksi johtuen palvelimen ruuhkautumisesta
-                error: function () {
-                    console.log('error');
-
-            }
-
-            });
+        }
+        console.debug(this.sivuteriteltyina);
         
 
 
-
-    }
-    kasitteleTiedot() {
-        // Erottelee, k‰sittelee ja paluttaa tiedot.
-        // "vastaukset" taulukon ensimm‰inen elementti tallennetaan "eritellyttiedot taulukkoon t‰m‰n j‰lkeen shift poistaa ensimm‰isen elementin taulukosta "vastaukset" ja vaihtaa j‰ljell‰ olevien vastausten indexit yhden pienemp‰‰n.
-        var eritellyttiedot = vastaukset.shift();
-        let kasitellyttiedot = [];
        
-
-            // Split jakaa JSON merkkijonon taulukkoon erillisiksi merkkijonoiksi.
-            var eritellyttiedot = eritellyttiedot.split('","');
-
-
-            // Merkkijonoista poistetaan ylim‰‰r‰inen muotoilu jota ei haluta tallentaa.
-
-            kasitellyttiedot.push(eritellyttiedot[0].replace('     {\"kysymysid\":\"', ""));
-
-            kasitellyttiedot.push(eritellyttiedot[1].replace('kysymysteksti":"', ""));
-
-            kasitellyttiedot.push(eritellyttiedot[2].replace('vastausvaihtoehto1\":\"', ""));
-
-            kasitellyttiedot.push(eritellyttiedot[3].replace('vastausvaihtoehto2\":\"', ""));
-
-            kasitellyttiedot.push(eritellyttiedot[4].replace('vastausvaihtoehto3\":\"', ""));
-
-            kasitellyttiedot.push(eritellyttiedot[5].replace('vastausvaihtoehto4\":\"', ""));
-
-            kasitellyttiedot.push(eritellyttiedot[6].replace('oikeavastaus\":\"', ""));
-
-            kasitellyttiedot.push(eritellyttiedot[7].replace('oikeavastauspalaute":"', ""));
-            kasitellyttiedot[7] = kasitellyttiedot[7].slice(0, -2);
-
-            kasitellyttiedot.push(eritellyttiedot[8].replace('vaaravastauspalaute":"', ""));
-            kasitellyttiedot[8] = kasitellyttiedot[8].slice(0, -2);
-            
-            return kasitellyttiedot;
+        
     }
+        
 }
