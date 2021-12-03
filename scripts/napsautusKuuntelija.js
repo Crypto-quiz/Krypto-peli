@@ -1,5 +1,5 @@
 //  Nappuloihin liitetetyt instanssit EventHandler luokkasta odottavat tapahtumaa jossa nappulaa on painettu.
-//  Kun nappulaa on painettu EventHandler kutsuu funktion "nappulaNapsautettu" ja syöttää Event tyyppisen olion argumenttina kutsutulle funktiolle nimellä "tapahtuma".
+//  Kun nappulaa on painettu EventHandler kutsuu funktion "nappulaNapsautettu" ja syï¿½ttï¿½ï¿½ Event tyyppisen olion argumenttina kutsutulle funktiolle nimellï¿½ "tapahtuma".
 
 function napsautusKuuntelija(tapahtuma) {
 
@@ -11,7 +11,7 @@ function napsautusKuuntelija(tapahtuma) {
     console.log("Napsautus havaittu");
     
 
-        // Suoritettava koodi määrittyy "tapahtuma" Eventin atribuutin target.id mukaan. id sisältää Eventin luoneen elementin tunnisteen.
+        // Suoritettava koodi mï¿½ï¿½rittyy "tapahtuma" Eventin atribuutin target.id mukaan. id sisï¿½ltï¿½ï¿½ Eventin luoneen elementin tunnisteen.
         switch (napsautetunnappulanID) {
 
            
@@ -23,9 +23,8 @@ function napsautusKuuntelija(tapahtuma) {
 
                 vastauksenNumero = napsautetunnappulanID.substr(napsautetunnappulanID.length - 1);
                 console.log("vastaus " + vastauksenNumero);
-                console.log(globaalitMuuttujat.vanhatValinnat);
                 poistaValinnat();
-                // selvennä
+                // selvennï¿½
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1].seuraavasivu);
                 console.log(seuraavasivu);
@@ -38,9 +37,8 @@ function napsautusKuuntelija(tapahtuma) {
             case "seuraava":
                 vastauksenNumero = 0;
                 console.log("seuraava");
-                console.log(globaalitMuuttujat.vanhatValinnat);
                 poistaValinnat();
-                // selvennä
+                // selvennï¿½
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero].seuraavasivu);
                 console.log(seuraavasivu);
