@@ -28,7 +28,7 @@
 					"sivuntyyppi": "palaute",
 					"sivuntekstit": [
 						{
-							"tekstintyyppi": "selitys",
+							"tekstintyyppi": "tarina",
 							"teksti": "Jarmon sijoitukset eiv�t tuottaneet mit��n takaisin, joten h�n joutui myym��n talonsa. �l� koskaan sijoita kaikkia rahoja, oli kyse sitten kryptovaluutasta tai muista osakkeista. Toki in aina mahdollista, ett� omaisuutesi voi kertaheitolla moninkertaistua, mutta koko omaisuuden menett�minen on hirve� riski."
 						}
 					],
@@ -47,7 +47,7 @@
 					"sivuntyyppi": "palaute",
 					"sivuntekstit": [
 						{
-							"tekstintyyppi": "selitys",
+							"tekstintyyppi": "palaute",
 							"teksti": "Hyv�! Sijoituksiin kannattaa laittaa maltillinen m��r� rahaa, jonka menett�minen ei tuota taloudellisia vaikeuksia, jos satut menett�m��n sen."
 						}
 					],
