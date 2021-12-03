@@ -24,13 +24,16 @@
                 break;
 
             case 'tarina':
+                elementti = document.getElementById('tarina');
+                elementti.innerHTML = elementinteksti;
+                break;
             case 'palaute':
-                elementti = document.getElementById('tekstikentta');
+                elementti = document.getElementById('palaute');
                 elementti.innerHTML = elementinteksti;
                 break;
 
-            case 'kysymyksenselvennys':
-                elementti = document.getElementById('kysymyksenselvennys');
+            case 'kysymys':
+                elementti = document.getElementById('kysymys');
                 elementti.innerHTML = elementinteksti;
                 break;
 
@@ -41,12 +44,12 @@
 
     }
     function vaihdaInnerHTML(id, uusiteksti) {
-        // Suomenkielinen funktio joka hoitaa täysin saman toiminnon kuin Element.innerHTML = uusiteksti tarkoitettu helpottamaan koodin luettavuutta.
+        // Suomenkielinen funktio joka hoitaa tï¿½ysin saman toiminnon kuin Element.innerHTML = uusiteksti tarkoitettu helpottamaan koodin luettavuutta.
         document.getElementById(id).innerHTML = uusiteksti;
     }
 
     function poistaElementti(elementinID) {
-        // Suomenkielinen funktio joka hoitaa täysin saman toiminnon kuin Element.remove(id) tarkoitettu helpottamaan koodin luettavuutta.
+        // Suomenkielinen funktio joka hoitaa tï¿½ysin saman toiminnon kuin Element.remove(id) tarkoitettu helpottamaan koodin luettavuutta.
         document.getElementById(elementinID).remove();
     }
 
