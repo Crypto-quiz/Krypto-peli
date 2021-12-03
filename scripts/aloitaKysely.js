@@ -9,7 +9,7 @@ const globaalitMuuttujat = {
 function aloitaKysely() {
 
     
-    globaalitMuuttujat.vanhatValinnat.push("aloitaKyselyNappula");
+    globaalitMuuttujat.vanhatValinnat.push("aloitaNappula");
 
     
     console.log(tiedonkasittelija);

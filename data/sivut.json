@@ -2,11 +2,11 @@
 			"sivut": [
 				{
 					"sivunid": 0,
-					"sivuntyypi": "tarina",
+					"sivuntyyppi": "tarina",
 					"sivuntekstit": [
 						{
 							"tekstintyyppi": "tarina",
-							"teksti": "Minulla on tililläni rahaa 100 000 Euroa. Kuinka suuri osa siitä minun kannattaisi sijoittaa kryptovaluuttaan?"
+							"teksti": "Minulla on tilillï¿½ni rahaa 100 000 Euroa. Kuinka suuri osa siitï¿½ minun kannattaisi sijoittaa kryptovaluuttaan?"
 						}
 					],
 					"sivunvalinnat": [
@@ -25,11 +25,11 @@
 				},
 				{
 					"sivunid": 1,
-					"sivuntyypi": "palaute",
+					"sivuntyyppi": "palaute",
 					"sivuntekstit": [
 						{
-							"tekstintyyppi": "selitys",
-							"teksti": "Jarmon sijoitukset eivät tuottaneet mitään takaisin, joten hän joutui myymään talonsa. Älä koskaan sijoita kaikkia rahoja, oli kyse sitten kryptovaluutasta tai muista osakkeista. Toki in aina mahdollista, että omaisuutesi voi kertaheitolla moninkertaistua, mutta koko omaisuuden menettäminen on hirveä riski."
+							"tekstintyyppi": "tarina",
+							"teksti": "Jarmon sijoitukset eivï¿½t tuottaneet mitï¿½ï¿½n takaisin, joten hï¿½n joutui myymï¿½ï¿½n talonsa. ï¿½lï¿½ koskaan sijoita kaikkia rahoja, oli kyse sitten kryptovaluutasta tai muista osakkeista. Toki in aina mahdollista, ettï¿½ omaisuutesi voi kertaheitolla moninkertaistua, mutta koko omaisuuden menettï¿½minen on hirveï¿½ riski."
 						}
 					],
 					"sivunvalinnat": [
@@ -44,11 +44,11 @@
 
 				{
 					"sivunid": 2,
-					"sivuntyypi": "palaute",
+					"sivuntyyppi": "palaute",
 					"sivuntekstit": [
 						{
-							"tekstintyyppi": "selitys",
-							"teksti": "Hyvä! Sijoituksiin kannattaa laittaa maltillinen määrä rahaa, jonka menettäminen ei tuota taloudellisia vaikeuksia, jos satut menettämään sen."
+							"tekstintyyppi": "palaute",
+							"teksti": "Hyvï¿½! Sijoituksiin kannattaa laittaa maltillinen mï¿½ï¿½rï¿½ rahaa, jonka menettï¿½minen ei tuota taloudellisia vaikeuksia, jos satut menettï¿½mï¿½ï¿½n sen."
 						}
 					],
 					"sivunvalinnat": [
@@ -62,11 +62,11 @@
 				},
 				{
 					"sivunid": 3,
-					"sivuntyypi": "tarina",
+					"sivuntyyppi": "tarina",
 					"sivuntekstit": [
 						{
 							"tekstintyyppi": "tarina",
-							"teksti": "Olen nyt päättänyt sijoittaa 10 000 euroa kryptovaluuttaan. Kannattaako rahat sijoittaa yhteen vai useisiin valuuttoihin?"
+							"teksti": "Olen nyt pï¿½ï¿½ttï¿½nyt sijoittaa 10 000 euroa kryptovaluuttaan. Kannattaako rahat sijoittaa yhteen vai useisiin valuuttoihin?"
 						}
 					],
 					"sivunvalinnat": [
@@ -86,11 +86,11 @@
 
 				{
 					"sivunid": 4,
-					"sivuntyypi": "tarina",
+					"sivuntyyppi": "tarina",
 					"sivuntekstit": [
 						{
 							"tekstintyyppi": "tarina",
-							"teksti": "Sijoitan nyt sijoitussalkkuni varat vain yhteen kryptovaluuttaa. Minkä valuutan valitsisin?"
+							"teksti": "Sijoitan nyt sijoitussalkkuni varat vain yhteen kryptovaluuttaa. Minkï¿½ valuutan valitsisin?"
 						}
 					],
 					"sivunvalinnat": [
@@ -110,7 +110,7 @@
 
 				{
 					"sivunid": 5,
-					"sivuntyypi": "tarina",
+					"sivuntyyppi": "tarina",
 					"sivuntekstit": [
 						{
 							"tekstintyyppi": "tarina",
@@ -120,12 +120,12 @@
 					"sivunvalinnat": [
 						{
 							"valinnantyyppi": "vastaus1",
-							"valinnanteksti": "Ei top 10-valuuttoihin kuuluvia, mutta sellaisia, joista hän on ottanut selvää",
+							"valinnanteksti": "Ei top 10-valuuttoihin kuuluvia, mutta sellaisia, joista hï¿½n on ottanut selvï¿½ï¿½",
 							"seuraavasivu": 7
 						},
 						{
 							"valinnantyyppi": "vastaus2",
-							"valinnanteksti": "Hauskan nimisiä valuuttoja, jotka eivät ole kovin tunnettuja",
+							"valinnanteksti": "Hauskan nimisiï¿½ valuuttoja, jotka eivï¿½t ole kovin tunnettuja",
 							"seuraavasivu": 8
 						}
 					],
