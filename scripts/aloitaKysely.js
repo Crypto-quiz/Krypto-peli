@@ -1,15 +1,29 @@
-// Globaali const vailla parempaa paikkaa 
+//
 var tiedonkasittelija = new TiedonKasittelija();
+const globaalitMuuttujat = {
+    "vanhatValinnat": [],
+    "tamanhetkinensivu": 0
+
+}
 
 function aloitaKysely() {
 
-    vanhatValinnat = [];
-    vanhatValinnat.push("aloitaKyselyNappula");
+    
+    globaalitMuuttujat.vanhatValinnat.push("aloitaKyselyNappula");
+
+    
+    console.log(tiedonkasittelija);
 
     tiedonkasittelija.noudaJSON();
     tiedonkasittelija.luoSivut();
 
-    poistaValinnat(vanhatValinnat);
-    vaihdaSivuunTiedot(tiedonkasittelija.getSivu(0));
+    sivu = tiedonkasittelija.getSivu(0);
+    globaalitMuuttujat.tamanhetkinensivu = sivu;
+    poistaValinnat();
+
+
+    console.log(sivu);
+    console.log("sivut");
+    vaihdaSivuunTiedot(sivu);
     
 }

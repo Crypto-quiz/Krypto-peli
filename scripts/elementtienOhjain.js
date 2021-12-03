@@ -54,8 +54,8 @@
     function lisaaEventHandler(nappulanID, valmiseventhandler) {
         // lisaaElementti helpottaa toistuvien EventHandlereident elementtien luontia. 
         switch (valmiseventhandler) {
-            case 'nappulanapsautettu':
-                document.getElementById(nappulanID).addEventListener('click', nappulaNapsautettu);
+            case 'napsautusKuuntelija':
+                document.getElementById(nappulanID).addEventListener('click', napsautusKuuntelija);
                 break;
             default:
                 break;
@@ -65,30 +65,34 @@
 
     function vaihdaSivuunTiedot(sivu) {
 
-        for (let i = 0; sivu.sivuntekstit.length > i; i++) {
-            lisaaElementti(sivu.sivuntekstit[i].tekstintyyppi, sivu.sivuntekstit[i].teksti);
+        for (let i = 0; sivu.laskeValintojenMaara > i; i++) {
+            lisaaElementti(sivu.sivuntekstit[i].tyyppi, sivu.sivuntekstit[i].sisalto);
+            console.log(sivu.sivuntekstit[i].tyyppi, sivu.sivuntekstit[i].sisalto);
         }
 
         for (let i = 0; sivu.sivunvalinnat.length > i; i++) {
-            let tyyppi = sivu.sivunvalinnat[i].valinnantyyppi;
-            let teksti = sivu.sivunvalinnat[i].valinnanteksti;
+
+            let tyyppi = sivu.sivunvalinnat[i].tyyppi;
+            let teksti = sivu.sivunvalinnat[i].teksti;
 
            
             
             lisaaElementti(tyyppi, teksti);
             vaihdaInnerHTML(tyyppi, teksti);
-            lisaaEventHandler(tyyppi, 'nappulanapsautettu');
+            lisaaEventHandler(tyyppi, 'napsautusKuuntelija');
 
-            //this.sivunaktiivisetvalinnat.push(tyyppi);
+            globaalitMuuttujat.vanhatValinnat.push(tyyppi);
+
+            
         }
 
     }
 
     
-    function poistaValinnat(listavanhoistavalinnoista) {
-        for (let i = 0; listavanhoistavalinnoista.length > i; i++) {
-            this.poistaElementti(listavanhoistavalinnoista[i]);
+    function poistaValinnat() {
+        for (let i = 0; globaalitMuuttujat.vanhatValinnat.length > i; i++) {
+            poistaElementti(globaalitMuuttujat.vanhatValinnat[i]);
         }
-        
+        globaalitMuuttujat.vanhatValinnat = [];
     }
     

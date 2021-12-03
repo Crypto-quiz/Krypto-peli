@@ -14,7 +14,7 @@ class Sivu {
         }
 
         for (let i = 0; valinnat.length > i; i++) {
-            this.sivunvalinnat.push(new Valinta(valinnat[i].valinnanteksti, valinnat[i].seuraavasivu));
+            this.sivunvalinnat.push(new Valinta(valinnat[i].valinnantyyppi, valinnat[i].valinnanteksti, valinnat[i].seuraavasivu));
         }
 
         this.sivunkuva = kuva;
@@ -40,7 +40,7 @@ class Sivu {
         return this.sivunvalinta[indexi];
     }
 
-    laskevVlintojenMaara() {
+    laskevValintojenMaara() {
         return Object.keys(this.sivuntekstit).length;
     }
 

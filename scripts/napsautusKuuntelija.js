@@ -2,40 +2,52 @@
 //  Kun nappulaa on painettu EventHandler kutsuu funktion "nappulaNapsautettu" ja syˆtt‰‰ Event tyyppisen olion argumenttina kutsutulle funktiolle nimell‰ "tapahtuma".
 
 function napsautusKuuntelija(tapahtuma) {
-    let napsautetunnappulanID = tapahtuma.target.id;
 
+    let napsautetunnappulanID = tapahtuma.target.id;
+    let vastauksenNumero;
+    let seuraavasivu;
     // seuraavan sivun indexi 
 
     console.log("Napsautus havaittu");
     
 
         // Suoritettava koodi m‰‰rittyy "tapahtuma" Eventin atribuutin target.id mukaan. id sis‰lt‰‰ Eventin luoneen elementin tunnisteen.
-        switch (tapahtuma) {
+        switch (napsautetunnappulanID) {
 
-            
+           
 
             case "vastaus1":
             case "vastaus2": 
             case "vastaus3":
             case "vastaus4":
 
-                console.log("vastaus 1");
-                elementtienohjaaja.poistaSivunValinnat();
+                vastauksenNumero = napsautetunnappulanID.substr(napsautetunnappulanID.length - 1);
+                console.log("vastaus " + vastauksenNumero);
+                console.log(globaalitMuuttujat.vanhatValinnat);
+                poistaValinnat();
                 // selvenn‰
-                seuraavasivu = tiedonkasittelija.getSivu(seuraavasivu).sivunvalinnat[0].seuraavasivu;
-                // K‰yt‰ funktiota luokansijasta
-                elementtienohjaaja.vaihdaSivuunTiedot(tiedonkasittelija.getSivu(seuraavasivu));
+                console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1]);
+                seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1].seuraavasivu);
                 console.log(seuraavasivu);
-                // 
+
+                
+                vaihdaSivuunTiedot(seuraavasivu);
+                globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
                 break;
 
             case "seuraava":
+                vastauksenNumero = 0;
                 console.log("seuraava");
-                elementtienohjaaja.poistaVanhanSivunValinnat();
-                seuraavasivu = tiedonkasittelija.getSivu(seuraavasivu).sivunvalinnat[0].seuraavasivu;
-                elementtienohjaaja.vaihdaSivuunTiedot(tiedonkasittelija.getSivu(seuraavasivu));
+                console.log(globaalitMuuttujat.vanhatValinnat);
+                poistaValinnat();
+                // selvenn‰
+                console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero]);
+                seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero].seuraavasivu);
                 console.log(seuraavasivu);
-                // 
+
+
+                vaihdaSivuunTiedot(seuraavasivu);
+                globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
                 break;
             case "palaatakaisin":
                 console.log("takaisin");
