@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Kryptovaluutta Quiz</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+    <script src="scripts/Sivu.js"></script>
+    <script src="scripts/Teksti.js"></script>
+    <script src="scripts/Valinta.js"></script>
+    <script src="scripts/elementtienOhjain.js"></script>
+    <script src="scripts/TiedonKasittelija.js"></script>
+    <script src="scripts/napsautusKuuntelija.js"></script>
+    <script src="scripts/aloitaKysely.js"></script>
+</head>
+
+<body>
+    <!-- CONTENT -->
+    <div class="container borderi">
+            <div class="row wrap justify-content-center">
+                <div class="col-7">
+                    <h4 class="otsikko">
+                        <i class="fab fa-bitcoin"></i>
+                        Hurja Kryptovaluuttaseikkailupeli
+                    </h4>
+                    <p id="tarina">Hei! Olen Jarmo, 35-vuotias automyyjä . Asun pienessä kerrostaloasunnossa
+                        vaimoni ja kahden alakouluikäisten lasteni kanssa, ja kolmas lapsi on myös tuloillaan. Olemme jo
+                        kauan haaveilleet muutosta isoon omakotitaloon, mutta meillä ei ole varaa sellaiseen.</p>
+                    <p id="kysymys"> Kuulin hyvältä ystävältäni Martilta, että hän on saanut tehtyä mukavat rahat
+                        kryptovaluutoilla. Martti ehdottikin, että lähtisin mukaan sijoittamaan. Ongelmani on, että
+                        minulla ei ole harmainta aavistustakaan, kuinka tällainen sijoittaminen onnistuu. Pystyisitkö
+                        sinä auttamaan saamaan minulle ja perheelleni uuden hienon talon?</p>
+
+                    <h4 class="otsikko">
+                        <i class="fas fa-question-circle"></i>
+                        Kuinka pelata?
+                    </h4>
+                    <p id="tekstikentta">Sinun tehtäväsi on auttaa Jarmoa sijoittamaan kryptovaluuttakaupoilla. Sinulta
+                        kysytään erilaisia kysymyksiä kryptovaluuttoihin liittyen ja vastauksesi vaikuttavat siihen,
+                        miten Jarmolle käy. Pohdi siis kysymyksiä huolella. Onnea peliin!</p>
+
+                </div>
+
+                <div class="col-5 align-self-center text-center">
+                    <div class="oikea">
+                        <img src="images/image1.svg" class="img-fluid" alt="svg image">
+                    </div>
+                    <div class="oikea" id="nappulat">
+                        <button id="aloitaNappula" onclick="aloitaKysely()" class="btn mr-lg-4 custom-btn"><i
+                                class='uil uil-file-alt'></i> Aloita Quiz</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
