@@ -24,6 +24,7 @@ function napsautusKuuntelija(tapahtuma) {
                 vastauksenNumero = napsautetunnappulanID.substr(napsautetunnappulanID.length - 1);
                 console.log("vastaus " + vastauksenNumero);
                 poistaValinnat();
+                tyhjennaTekstit();
                 // selvenn�
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1].seuraavasivu);
@@ -35,9 +36,12 @@ function napsautusKuuntelija(tapahtuma) {
                 break;
 
             case "seuraava":
+
+
                 vastauksenNumero = 0;
                 console.log("seuraava");
                 poistaValinnat();
+                tyhjennaTekstit();
                 // selvenn�
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero].seuraavasivu);
@@ -50,7 +54,7 @@ function napsautusKuuntelija(tapahtuma) {
             case "palaatakaisin":
                 console.log("takaisin");
                 elementtienohjaaja.poistaVanhanSivunValinnat();
-                euraavasivu = tiedonkasittelija.getSivu(seuraavasivu).sivunvalinnat[0].seuraavasivu;
+                seuraavasivu = tiedonkasittelija.getSivu(seuraavasivu).sivunvalinnat[0].seuraavasivu;
                 elementtienohjaaja.vaihdaSivuunTiedot(tiedonkasittelija.getSivu(seuraavasivu));
                 console.log(seuraavasivu);
                 // 

@@ -19,7 +19,7 @@
                         id: elementinID,
                         innerHTML: elementinteksti,
                         // Anna kuvaavat nimet
-                        className: 'btn mr-lg-4 custom-btn'
+                        className: 'button'
                     }))
                 break;
 
@@ -48,6 +48,11 @@
         document.getElementById(id).innerHTML = uusiteksti;
     }
 
+    function tyhjennaInnerHTML(id) {
+        // Suomenkielinen funktio joka hoitaa t�ysin saman toiminnon kuin Element.innerHTML = "" tarkoitettu helpottamaan koodin luettavuutta.
+        document.getElementById(id).innerHTML = "";
+}
+
     function poistaElementti(elementinID) {
         // Suomenkielinen funktio joka hoitaa t�ysin saman toiminnon kuin Element.remove(id) tarkoitettu helpottamaan koodin luettavuutta.
         document.getElementById(elementinID).remove();
@@ -67,17 +72,18 @@
 
 
     function vaihdaSivuunTiedot(sivu) {
-
-        for (let i = 0; sivu.laskeValintojenMaara > i; i++) {
+      
+        for (let i = 0; sivu.laskeTekstienMaara() > i; i++) {
+           //
             lisaaElementti(sivu.sivuntekstit[i].tyyppi, sivu.sivuntekstit[i].sisalto);
             console.log(sivu.sivuntekstit[i].tyyppi, sivu.sivuntekstit[i].sisalto);
         }
 
-        for (let i = 0; sivu.sivunvalinnat.length > i; i++) {
+        for (let i = 0; sivu.laskeValintojenMaara() > i; i++) {
 
             let tyyppi = sivu.sivunvalinnat[i].tyyppi;
             let teksti = sivu.sivunvalinnat[i].teksti;
-
+           
            
             
             lisaaElementti(tyyppi, teksti);
@@ -97,5 +103,20 @@
             poistaElementti(globaalitMuuttujat.vanhatValinnat[i]);
         }
         globaalitMuuttujat.vanhatValinnat = [];
-    }
+}
+
+function tyhjennaTekstit() {
+    tyhjennaInnerHTML("tarina");
+    tyhjennaInnerHTML("kysymys");
+    tyhjennaInnerHTML("palaute");
+}
+
+function piilotaElementti(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+function paljastaElementti(id) {
+    document.getElementById(id).style.display = "block";
+    console.log("show")
+}
     

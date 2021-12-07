@@ -29,7 +29,9 @@ class Sivu {
     }
 
     laskeTekstienMaara() {
-        return Object.keys(this.tekstit).length;
+       
+        return this.sivuntekstit.length;
+        
     }
 
     getTeksti(indexi) {
@@ -40,15 +42,12 @@ class Sivu {
         return this.sivunvalinta[indexi];
     }
 
-    laskevValintojenMaara() {
-        return Object.keys(this.sivuntekstit).length;
+    laskeValintojenMaara() {
+        
+        return this.sivunvalinnat.length;
     }
 
-    valintojenMaara() {
-        return Object.keys(this.sivunvalinnat).length;
-    }
-
-    getValinnat(indexi) {
+    getValinta(indexi) {
         return this.sivuntekstit[indexi];
 
     }

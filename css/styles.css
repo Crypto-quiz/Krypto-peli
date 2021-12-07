@@ -13,6 +13,9 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  font-size: min(max(1rem, 4vw), 16px);
+}
 
 body {
   font-family: var(--ff-primary);
@@ -93,7 +96,6 @@ section {
 .container--narrow {
   max-width: 34rem;
 }
-
 .button {
 
   display: inline-block;
@@ -101,12 +103,11 @@ section {
   border: 0;
   cursor: pointer;
   background: radial-gradient( 100% 100% at 100% 0%, #434F7A 0%, #132152 100% );
-  padding: 0 32px;
-  border-radius: 15px;
+  border-radius: 1em;
   color: #fff;
-  height: 3em;
-  width: 12em;
-  font-size: 21px;
+  font-size: 1em;
+  margin: 0.2em;
+  padding: 1.5em;
   
   text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
   transition: box-shadow 0.15s ease,transform 0.15s ease;
@@ -120,6 +121,13 @@ section {
   box-shadow: inset 0px 3px 7px rgb(227, 228, 238);
   transform: translateY(2px);
 }
+@media all and (max-width:30em){
+   .button{
+    display:block;
+    margin:0.2em auto;
+  }
+}
+
 .wrap {
   background: #ffffff;
   padding: 5%;
@@ -140,5 +148,17 @@ section {
 }
 .nappulat {
   margin: auto;
-  text-align: center;
 }
+p.kysymys{
+  font-size: 18px;
+}
+p.kysymys::before {
+  content: "";
+  display: block;
+  background: url("../icons/question.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 3px 6px 0 0;
+}
+
