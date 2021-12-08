@@ -158,11 +158,37 @@ section {
   border-width: 2em;
   border-color: #333F6B;
 }
+.kuvaetusivu {
+  margin: auto;
+}
 .kuva {
   margin: auto;
 }
 .nappulat {
   margin: auto;
+}
+.otsikko::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  -webkit-mask: url("../icons/bitcoin.svg") no-repeat 50% 50%;
+  mask: url("../icons/bitcoin.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: var(--clr-primary);
+}
+
+.kuinkapelata::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  -webkit-mask: url("../icons/question.svg") no-repeat 50% 50%;
+  mask: url("../icons/question.svg") no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: var(--clr-primary);
 }
 
 p.kysymys::before {
@@ -193,3 +219,5 @@ html {
   animation-duration: 1s;
   animation-name: bounceIn;
 }
+
+/* Etusivu juttuja */

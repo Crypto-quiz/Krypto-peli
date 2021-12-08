@@ -8,7 +8,7 @@ const globaalitMuuttujat = {
 
 function aloitaKysely() {
 
-    
+    tyhjennaInnerHTML('content');
     globaalitMuuttujat.vanhatValinnat.push("aloitaNappula");
 
     // Anna ID:t tekstikent�lle ja otsikolle piilotusta varten.
@@ -23,11 +23,10 @@ function aloitaKysely() {
     sivu = tiedonkasittelija.getSivu(0);
     globaalitMuuttujat.tamanhetkinensivu = sivu;
     poistaValinnat();
-
+    
 
     console.log(sivu);
     console.log("sivut");
-    piilotaElementti("tekstikentta");
     vaihdaSivuunTiedot(sivu);
     
 }
