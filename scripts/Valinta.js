@@ -2,14 +2,12 @@ class Valinta {
     tyyppi;
     teksti;
     seuraavasivu;
-    oikeavastaus;
 
     // id, kysymysteksti, tarkennettukysymys, vastaukset, kuva
-    constructor(valinnantyyppi, valinnanteksti, valinnanseuraavasivu, onkovastausoikea) {
+    constructor(valinnantyyppi, valinnanteksti, valinnanseuraavasivu) {
         this.tyyppi = valinnantyyppi;
         this.teksti = valinnanteksti;
         this.seuraavasivu = valinnanseuraavasivu;
-        this.oikeavastaus = onkovastausoikea;
     }
 
     getTyyppi() {

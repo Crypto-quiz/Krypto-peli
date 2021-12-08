@@ -119,18 +119,4 @@ function paljastaElementti(id) {
     document.getElementById(id).style.display = "block";
     console.log("show")
 }
-
-function poistaLuokka(id, uusiluokka) {
-    id = "#" + id;
-    $(id).removeClass(uusiluokka);
-}
-
-function lisaaLuokka(id, uusiluokka) {
-    document.getElementById(id).classList.add(uusiluokka);  
-}
-
-function vaihdaKuva(uusikuva) {
-    document.getElementById("kuva").src = uusikuva;
-
-}
     
