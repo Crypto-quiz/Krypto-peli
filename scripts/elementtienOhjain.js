@@ -89,8 +89,8 @@
            
             
             lisaaElementti(tyyppi, teksti);
-            console.log(sivu.sivunkuva);
-            vaihdaKuva(sivu.sivunkuva);
+            
+            vaihdaKuva(sivu.sivunid);
 
             lisaaEventHandler(tyyppi, 'napsautusKuuntelija');
 
@@ -133,8 +133,8 @@ function lisaaLuokka(id, uusiluokka) {
     document.getElementById(id).classList.add(uusiluokka);  
 }
 
-function vaihdaKuva(uusikuva) {
-    document.getElementById("kuva").src = uusikuva;
-
+function vaihdaKuva(seuraavansivunindexi) {
+    document.getElementById("kuva").src = "images/" + seuraavansivunindexi;
+    console.log("images/" + seuraavansivunindexi);
 }
     
