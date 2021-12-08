@@ -1,7 +1,7 @@
 //
 var tiedonkasittelija = new TiedonKasittelija();
 const globaalitMuuttujat = {
-    "vanhatValinnat": [],
+    "vanhatElementit": [],
     "tamanhetkinensivu": 0
 
 }
@@ -9,7 +9,11 @@ const globaalitMuuttujat = {
 function aloitaKysely() {
 
     
-    globaalitMuuttujat.vanhatValinnat.push("aloitaNappula");
+    globaalitMuuttujat.vanhatElementit.push("aloitaNappula");
+    // Vaihda poisto käyttäen childien poistoa
+    poistaElementti("palaute");
+    poistaElementti("tarina");
+    poistaElementti("kysymys");
 
     // Anna ID:t tekstikent�lle ja otsikolle piilotusta varten.
     //piilotaElementti("tekstikentta");
@@ -22,12 +26,19 @@ function aloitaKysely() {
 
     sivu = tiedonkasittelija.getSivu(0);
     globaalitMuuttujat.tamanhetkinensivu = sivu;
-    poistaValinnat();
+    poistaVanhatElementit();
 
 
     console.log(sivu);
     console.log("sivut");
-    piilotaElementti("tekstikentta");
+
     vaihdaSivuunTiedot(sivu);
+
+    /*
+    poistaLuokka("vastaus1", "button")
+    lisaaLuokka("vastaus1", "flexbox");
+    */
+    
+
     
 }
