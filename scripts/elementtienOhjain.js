@@ -15,26 +15,26 @@
                 // code block
                 $('#nappulat').append(
                     $(document.createElement('button')).prop({
-                        type: 'button',
+                        type: "button",
                         id: elementinID,
                         innerHTML: elementinteksti,
                         // Anna kuvaavat nimet
-                        className: 'button'
+                        className: "button"
                     }))
                 break;
 
             case 'tarina':
-                elementti = document.getElementById('tarina');
-                elementti.innerHTML = elementinteksti;
-                break;
             case 'palaute':
-                elementti = document.getElementById('palaute');
-                elementti.innerHTML = elementinteksti;
-                break;
-
             case 'kysymys':
-                elementti = document.getElementById('kysymys');
-                elementti.innerHTML = elementinteksti;
+
+                $('#tekstit').append(
+                    $(document.createElement('p')).prop({
+                        type: elementinID,
+                        id: elementinID,
+                        innerHTML: elementinteksti,
+                        // Anna kuvaavat nimet
+                        className: elementinID
+                    }))
                 break;
 
             default:
@@ -76,6 +76,8 @@
         for (let i = 0; sivu.laskeTekstienMaara() > i; i++) {
            //
             lisaaElementti(sivu.sivuntekstit[i].tyyppi, sivu.sivuntekstit[i].sisalto);
+            globaalitMuuttujat.vanhatElementit.push(sivu.sivuntekstit[i].tyyppi);
+
             console.log(sivu.sivuntekstit[i].tyyppi, sivu.sivuntekstit[i].sisalto);
         }
 
@@ -90,7 +92,7 @@
             vaihdaInnerHTML(tyyppi, teksti);
             lisaaEventHandler(tyyppi, 'napsautusKuuntelija');
 
-            globaalitMuuttujat.vanhatValinnat.push(tyyppi);
+            globaalitMuuttujat.vanhatElementit.push(tyyppi);
 
             
         }
@@ -98,11 +100,11 @@
     }
 
     
-    function poistaValinnat() {
-        for (let i = 0; globaalitMuuttujat.vanhatValinnat.length > i; i++) {
-            poistaElementti(globaalitMuuttujat.vanhatValinnat[i]);
+    function poistaVanhatElementit() {
+        for (let i = 0; globaalitMuuttujat.vanhatElementit.length > i; i++) {
+            poistaElementti(globaalitMuuttujat.vanhatElementit[i]);
         }
-        globaalitMuuttujat.vanhatValinnat = [];
+        globaalitMuuttujat.vanhatElementit = [];
 }
 
 function tyhjennaTekstit() {

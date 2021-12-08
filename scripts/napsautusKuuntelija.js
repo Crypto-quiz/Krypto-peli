@@ -23,8 +23,7 @@ function napsautusKuuntelija(tapahtuma) {
 
                 vastauksenNumero = napsautetunnappulanID.substr(napsautetunnappulanID.length - 1);
                 console.log("vastaus " + vastauksenNumero);
-                poistaValinnat();
-                tyhjennaTekstit();
+                poistaVanhatElementit();
                 // selvenn�
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1].seuraavasivu);
@@ -40,13 +39,11 @@ function napsautusKuuntelija(tapahtuma) {
 
                 vastauksenNumero = 0;
                 console.log("seuraava");
-                poistaValinnat();
-                tyhjennaTekstit();
+
+                poistaVanhatElementit();
                 // selvenn�
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero].seuraavasivu);
-                console.log(seuraavasivu);
-
 
                 vaihdaSivuunTiedot(seuraavasivu);
                 globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
