@@ -16,15 +16,15 @@
 			"sivunvalinnat": [
 				{
 					"valinnantyyppi": "vastaus1",
-					"valinnanteksti": "10%",
-					"oikeavastaus": true,
+					"valinnanteksti": "100%",
+					"oikeavastaus": false,
 					"seuraavasivu": 1
 					
 				},
 				{
 					"valinnantyyppi": "vastaus2",
-					"valinnanteksti": "100%",
-					"oikeavastaus": false,
+					"valinnanteksti": "10%",
+					"oikeavastaus": true,
 					"seuraavasivu": 2
 				}
 			],
@@ -33,6 +33,27 @@
 
 		{
 			"sivunid": 1,
+			"sivuntyyppi": "palaute",
+			"sivuntekstit": [
+				{
+					"tekstintyyppi": "palaute",
+					"teksti": "Jarmon sijoitukset eivät tuottaneet mitään takaisin, joten hän joutui myymään autonsa. Älä koskaan sijoita kaikkia rahoja, oli sitten kyse kryptovaluutasta tai muista osakkeista. Toki on aina mahdollisuus, että koko omaisuutesi voi kertaheitolla moninkertaistua, mutta koko omaisuuden menettäminen on hirveä riski.  "
+				}
+				
+				
+			],
+			"sivunvalinnat": [
+				{
+					"valinnantyyppi": "seuraava",
+					"valinnanteksti": "Seuraava sivu",
+					"seuraavasivu": 0
+				}
+			],
+			"sivunkuva": ""
+		},
+
+		{
+			"sivunid": 2,
 			"sivuntyyppi": "tarina",
 			"sivuntekstit": [
 				{
@@ -59,25 +80,6 @@
 					"valinnantyyppi": "vastaus2",
 					"valinnanteksti": "Useaan valuuttaan",
 					"seuraavasivu": 4
-				}
-			],
-			"sivunkuva": ""
-		},
-
-		{
-			"sivunid": 2,
-			"sivuntyyppi": "palaute",
-			"sivuntekstit": [
-				{
-					"tekstintyyppi": "palaute",
-					"teksti": "Jarmon sijoitukset eivät tuottaneet mitään takaisin, joten hän joutui myymään autonsa. Älä koskaan sijoita kaikkia rahoja, oli sitten kyse kryptovaluutasta tai muista osakkeista. Toki on aina mahdollisuus, että koko omaisuutesi voi kertaheitolla moninkertaistua, mutta koko omaisuuden menettäminen on hirveä riski. "
-				}
-			],
-			"sivunvalinnat": [
-				{
-					"valinnantyyppi": "seuraava",
-					"valinnanteksti": "Aloita alusta",
-					"seuraavasivu": 0
 				}
 			],
 			"sivunkuva": ""
@@ -735,7 +737,13 @@
 				{
 					"tekstintyyppi": "palaute",
 					"teksti": "Oikein!  Huijareiden on helppo saada tekemänsä nettisivusto Googlen hakutulosten kärkeen.  Kirjoita aina osoiteriville sivuston osoite, jolle haluat mennä, jos kyseessä on pankki tai muu sivusto, jolla on sinun yksityisiä tietojasi tai varojasi.   "
+				},
+
+				{
+					"tekstintyyppi": "tarina",
+					"teksti": "Kiitos, olet huipputyyppi! Autoit minua selviämään kryptovaluutan maailmassa, ja olenkin sen avulla onnistunut kerämään tarpeeksi varoja omakotitalon ostoon! Sinne voin nyt asettua rakkaideni kanssa. "
 				}
+
 			],
 			"sivunvalinnat": [
 				{
