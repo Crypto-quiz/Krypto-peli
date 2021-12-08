@@ -34,7 +34,7 @@ function aloitaKysely() {
     poistaLuokka("vastaus1", "button")
     lisaaLuokka("vastaus1", "flexbox");
     */
-    vaihdaKuva("images/swag.svg")
+    
 
     
 }

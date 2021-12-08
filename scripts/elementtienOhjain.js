@@ -89,7 +89,9 @@
            
             
             lisaaElementti(tyyppi, teksti);
-            vaihdaInnerHTML(tyyppi, teksti);
+            console.log(sivu.sivunkuva);
+            vaihdaKuva(sivu.sivunkuva);
+
             lisaaEventHandler(tyyppi, 'napsautusKuuntelija');
 
             globaalitMuuttujat.vanhatElementit.push(tyyppi);
