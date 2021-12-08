@@ -11,7 +11,7 @@ function aloitaKysely() {
     
     globaalitMuuttujat.vanhatValinnat.push("aloitaNappula");
 
-    // Anna ID:t tekstikentï¿½lle ja otsikolle piilotusta varten.
+    // Anna ID:t tekstikentälle ja otsikolle piilotusta varten.
     //piilotaElementti("tekstikentta");
     //piilotaElementti("otsikko");
 
@@ -27,7 +27,14 @@ function aloitaKysely() {
 
     console.log(sivu);
     console.log("sivut");
-    piilotaElementti("tekstikentta");
+
     vaihdaSivuunTiedot(sivu);
+
+    
+    poistaLuokka("vastaus1", "button")
+    lisaaLuokka("vastaus1", "flexbox");
+    
+    vaihdaKuva("images/swag.svg")
+
     
 }
