@@ -134,7 +134,7 @@ function lisaaLuokka(id, uusiluokka) {
 }
 
 function vaihdaKuva(seuraavansivunindexi) {
-    document.getElementById("kuva").src = "images/" + seuraavansivunindexi;
-    console.log("images/" + seuraavansivunindexi);
+    document.getElementById("kuva").src = "images/" + seuraavansivunindexi + ".svg";
+    console.log("images/" + seuraavansivunindexi + ".svg");
 }
     
