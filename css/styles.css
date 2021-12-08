@@ -108,6 +108,7 @@ section {
   font-size: 1em;
   margin: 0.2em;
   padding: 1.5em;
+  font-weight: bold;
   
   text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
   transition: box-shadow 0.15s ease,transform 0.15s ease;
@@ -163,16 +164,32 @@ section {
 .nappulat {
   margin: auto;
 }
-p.kysymys{
-  font-size: 18px;
-}
+
 p.kysymys::before {
-  content: "";
-  display: block;
-  background: url("../icons/question.svg") no-repeat;
-  width: 20px;
-  height: 20px;
-  float: left;
-  margin: 3px 6px 0 0;
+  content: "Mutta kysymys kuuluu";
+  display: flex;
+  font-size: 21px;
 }
 
+.nappulat::before {
+  content: "Mitä valitset?";
+  display: flex;
+  font-size: 21px;
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+html {
+  animation-duration: 1s;
+  animation-name: bounceIn;
+}

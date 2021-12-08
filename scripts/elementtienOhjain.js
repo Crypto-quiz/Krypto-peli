@@ -119,4 +119,8 @@ function paljastaElementti(id) {
     document.getElementById(id).style.display = "block";
     console.log("show")
 }
-    
+
+function poistaElementti(id) {
+    var elem = document.getElementById(id);
+    elem.parentNode.removeChild(elem);
+}
