@@ -130,17 +130,17 @@ section {
 
 .wrap {
   background: #ffffff;
-  padding: 5%;
+  padding: 3%;
   border-radius: 1em;
   border-style: solid;
-  border-color: #ffffff;
+  border-width: 0em;
 }
 
 .borderi {
-  background: #333F6B;
   border-radius: 1em;
   border-style: solid;
-  border-width: 2em;
+  border-width: 1.5em;
+  background: #333F6B;
   border-color: #333F6B;
 }
 .kuva {
