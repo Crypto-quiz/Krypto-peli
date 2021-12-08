@@ -163,7 +163,15 @@ section {
 }
 
 p.kysymys{
-  font-size: 18px;
+
+}
+p.palaute::before{
+  content: "Tekstiä:";
+  display: block;
+}
+p.tarina::before{
+  content: "Tekstiä:";
+  display: block;
 }
 p.kysymys::before {
   content: "";
