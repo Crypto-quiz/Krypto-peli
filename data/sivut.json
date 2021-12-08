@@ -27,7 +27,7 @@
           "seuraavasivu": 2
         }
       ],
-      "sivunkuva": "images/swag.svg"
+      "sivunkuva": ""
     },
     {
       "sivunid": 1,
@@ -180,7 +180,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 2
         }
       ],
@@ -230,7 +230,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 2
         }
       ],
@@ -310,7 +310,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 9
         }
       ],
@@ -361,7 +361,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 10
         }
       ],
@@ -412,7 +412,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 12
         }
       ],
@@ -463,7 +463,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 16
         }
       ],
@@ -553,7 +553,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 18
         }
       ],
@@ -571,7 +571,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 19
         }
       ],
@@ -622,7 +622,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 19
         }
       ],
@@ -673,7 +673,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 22
         }
       ],
@@ -691,7 +691,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 24
         }
       ],
@@ -709,7 +709,7 @@
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Seuraava sivu",
+          "valinnanteksti": "Yritä uudestaan",
           "seuraavasivu": 0
         }
       ],

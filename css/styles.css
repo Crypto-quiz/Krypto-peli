@@ -145,6 +145,9 @@ section {
 }
 .kuva {
   margin: auto;
+  display: block;
+  text-align: center;
+  max-height: 500px;
 }
 .nappulat {
   margin: auto;

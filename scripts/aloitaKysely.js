@@ -10,8 +10,12 @@ function aloitaKysely() {
 
     
     globaalitMuuttujat.vanhatElementit.push("aloitaNappula");
+    // Vaihda poisto käyttäen childien poistoa
+    poistaElementti("palaute");
+    poistaElementti("tarina");
+    poistaElementti("kysymys");
 
-    // Anna ID:t tekstikent�lle ja otsikolle piilotusta varten.
+    // Anna ID:t tekstikent�lle ja otsikolle piilotusta varten.
     //piilotaElementti("tekstikentta");
     //piilotaElementti("otsikko");
 
