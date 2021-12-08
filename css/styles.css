@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 :root {
+  --clr-1: #222831;
+  --clr-2: #393E46;
+  --clr-3: #00ADB5;
+  --clr-4: #EEEEEE;
+  --ff-primary: 'Poppins', sans-serif;
+
   --clr-primary: #132152;
   --clr-secondary: #fff;
   --clr-bg: #434F7A;
-  --ff-primary: 'Poppins', sans-serif;
 }
 
 
@@ -19,7 +24,7 @@ body {
   font-family: var(--ff-primary);
   font-size: 1rem;
   line-height: 1.6;
-  background-color: var(--clr-bg);
+  background-color: var(--clr-1);
   min-width: 375px;
 }
 
@@ -34,7 +39,7 @@ p {
 h1,
 h2,
 h3 {
-  color: var(--clr-primary);
+  color: var(--clr-);
   font-family: var(--ff-primary);
 }
 
@@ -122,7 +127,7 @@ section {
 }
 
 .wrap {
-  background: #ffffff;
+  background: var(--clr-4);
   padding: 3%;
   border-radius: 1em;
   border-style: solid;
@@ -133,8 +138,8 @@ section {
   border-radius: 1em;
   border-style: solid;
   border-width: 1.5em;
-  background: #333F6B;
-  border-color: #333F6B;
+  background: var(--clr-2);
+  border-color: var(--clr-2);
 }
 .kuvaikkuna {
   margin: auto;
@@ -157,20 +162,24 @@ section {
 p.palaute::before{
   content: "Palaute";
   display: block;
-  color: red;
+  color: var(--clr-3);
   font-weight: bold;
+  font-weight: bold;
+  font-size: 21px;
 }
 p.tarina::before{
   content: "Tarina";
   display: block;
-  color: red;
+  color: var(--clr-3);
   font-weight: bold;
+  font-size: 21px;
 }
 p.kysymys::before{
   content: "Kysymys";
   display: block;
-  color: red;
+  color: var(--clr-3);
   font-weight: bold;
+  font-size: 21px;
 }
 /* p.kysymys::before {
   content: "";
