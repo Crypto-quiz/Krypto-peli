@@ -371,7 +371,7 @@
       "sivuntekstit": [
         {
           "tekstintyyppi": "palaute",
-          "teksti": "Jarmon salasana paljastui erään sosiaalisen median tietomurron kautta, jossa hän käytti samaa salasanaa, kuin kaupankäyntialustalla. Nyt kaikki hänen ostamansa kryptovaluutta on poissa. Turvaudumme usein ajatukseen, että ei meidän salasanaamme kukaan ikinä tule keksimään, kun olemme käyttäneet sitä joka paikassa jo vuosia. Ei kuitenkaan voi koskaan tietää, milloin tietomurto osuu kohdalle, joten muista aina käyttää eri salasanoja eri paikoissa ja tee niistä mahdollisimman monimutkaisia. "
+          "teksti": "Jarmon salasana paljastui erään sosiaalisen median tietomurron kautta, jossa hän käytti samaa salasanaa kuin kaupankäyntialustalla. Nyt kaikki hänen ostamansa kryptovaluutta on poissa. Turvaudumme usein ajatukseen, että ei meidän salasanaamme kukaan ikinä tule keksimään, kun olemme käyttäneet sitä joka paikassa jo vuosia. Ei kuitenkaan voi koskaan tietää, milloin tietomurto osuu kohdalle, joten muista aina käyttää eri salasanoja eri paikoissa ja tee niistä mahdollisimman monimutkaisia. "
         }
 
       ],
@@ -449,7 +449,7 @@
         },
         {
           "tekstintyyppi": "tarina",
-          "teksti": "Olemme nyt sopineet Martin kanssa, että maksan hänelle velkani kryptovaluutalla. En ole kuitenkaan täysin varma, muistanko Martin osoitetta oikein, johon rahat täytyy lähettää... Olen kuitenkin aika varma, että muistan osoitteen ulkoa oikein! Kai siirron saa jotenkin korjattua, jos osoite menee väärin. "
+          "teksti": "Olemme nyt sopineet Martin kanssa, että maksan hänelle velkani kryptovaluutalla. En ole kuitenkaan täysin varma, muistanko oikein Martin osoitetta, johon rahat täytyy lähettää... Olen kuitenkin aika varma, että muistan osoitteen ulkoa oikein! Kai siirron saa jotenkin korjattua, jos osoite menee väärin. "
         },
         {
           "tekstintyyppi": "kysymys",
@@ -503,7 +503,7 @@
         },
         {
           "tekstintyyppi": "tarina",
-          "teksti": "Martin innoittamana olen liittynyt Kryptovaluutan Sijoittajat-nimiseen some-ryhmään.  Kyseisessä ryhmässä olen nähnyt joidenkin tuntemattomien ihmisten suosittelevan erääseen uuteen kryptovaluuttaan sijoittamista kovalla rahalla, koska he ovat täysin varmoja, että sen arvo lähtee vielä nousuun. En tosiaan kyllä tunne heitä oikeassa elämässä, mutta olemme kuitenkin samassa ryhmässä, joten heidän arviointikykyynsä voisin ehkä kuitenkin luottaa. "
+          "teksti": "Martin innoittamana olen liittynyt Kryptovaluutan sijoittajat -nimiseen some-ryhmään.  Kyseisessä ryhmässä olen nähnyt joidenkin tuntemattomien ihmisten suosittelevan erääseen uuteen kryptovaluuttaan sijoittamista kovalla rahalla, koska he ovat täysin varmoja, että sen arvo lähtee vielä nousuun. En tosiaan kyllä tunne heitä oikeassa elämässä, mutta olemme kuitenkin samassa ryhmässä, joten heidän arviointikykyynsä voisin ehkä kuitenkin luottaa. "
         },
         {
           "tekstintyyppi": "kysymys",
