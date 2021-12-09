@@ -50,12 +50,13 @@ h3,
 p {
   font-family: var(--ff-primary);
   margin: 0;
+  
 }
 
 h1,
 h2,
 h3 {
-  color: var(--clr-);
+  color: var(--clr-3);
   font-family: var(--ff-seconday);
 }
 
@@ -224,3 +225,7 @@ p.kysymys::before{
   margin: 3px 6px 0 0;
 } */
 
+a { color: var(--clr-3); text-decoration: none; }
+
+
+a:hover { text-decoration: underline }
