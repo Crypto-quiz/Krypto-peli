@@ -1,14 +1,15 @@
 class Sivu {
+    sivunoikeavastaus;
     sivunid; // 
     sivuntyyppi;
     sivuntekstit = [];
     sivunvalinnat = [];
     sivunkuva;
         // id, kysymysteksti, tarkennettukysymys, vastaukset, kuva
-    constructor(id, tyyppi, tekstit, valinnat, kuva) {
+    constructor(id, tyyppi, tekstit, valinnat, kuva, oikeavastaus) {
         this.sivunid = id;
         this.sivuntyyppi = tyyppi; 
-
+        this.sivunoikeavastaus = oikeavastaus;
         for (let i = 0; tekstit.length > i; i++) {
             this.sivuntekstit.push(new Teksti(tekstit[i].tekstintyyppi, tekstit[i].teksti));
         }
