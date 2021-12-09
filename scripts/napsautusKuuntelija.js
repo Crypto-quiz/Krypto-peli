@@ -47,7 +47,7 @@ function napsautusKuuntelija(tapahtuma) {
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero].seuraavasivu);
                 console.log(seuraavasivu.sivunid);
                 if (seuraavasivu.sivunid==28){
-                    $( "#wrap" ).load( "Krypto-peli/loppu.html" );
+                    $( "#wrap" ).load( "loppu.html" );
                     break;
                 }
                 vaihdaSivuunTiedot(seuraavasivu);
