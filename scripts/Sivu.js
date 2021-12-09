@@ -6,10 +6,10 @@ class Sivu {
     sivunvalinnat = [];
     sivunkuva;
         // id, kysymysteksti, tarkennettukysymys, vastaukset, kuva
-    constructor(id, tyyppi, tekstit, valinnat, kuva, oikeavastaukset) {
+    constructor(id, tyyppi, tekstit, valinnat, kuva, oikeatvastaukset) {
         this.sivunid = id;
         this.sivuntyyppi = tyyppi; 
-        this.sivunoikeatvastaukset = oikeavastaukset;
+        this.sivunoikeatvastaukset = oikeatvastaukset;
         for (let i = 0; tekstit.length > i; i++) {
             this.sivuntekstit.push(new Teksti(tekstit[i].tekstintyyppi, tekstit[i].teksti));
         }
