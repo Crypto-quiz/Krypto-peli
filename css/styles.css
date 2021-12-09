@@ -6,6 +6,8 @@
   --clr-2: #393E46;
   --clr-3: #008d94;
   --clr-4: #EEEEEE;
+  --clr-oikein: #70be51;
+  --clr-vaarin: #eb6b40;
 /* 
   --clr-1: #434F7A;
   --clr-2: #333F6B;
@@ -154,6 +156,20 @@ section {
   border-width: 1.5em;
   background: var(--clr-2);
   border-color: var(--clr-2);
+}
+.borderi-vaarin {
+  border-radius: 1em;
+  border-style: solid;
+  border-width: 1.5em;
+  background: var(--clr-vaarin);
+  border-color: var(--clr-vaarin);
+}
+.borderi-oikein {
+  border-radius: 1em;
+  border-style: solid;
+  border-width: 1.5em;
+  background: var(--clr-oikein);
+  border-color: var(--clr-oikein);
 }
 .kuvaikkuna {
   margin: auto;
