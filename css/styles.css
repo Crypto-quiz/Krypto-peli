@@ -81,6 +81,11 @@ section {
   }
 }
 
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
 .split {
   margin-top: 2%;
   display: flex;
@@ -146,8 +151,6 @@ section {
 }
 
 .borderi {
-  margin-inline: auto;
-  width: min(90%, 70.5rem);
   border-radius: 1em;
   border-style: solid;
   border-width: 1.5em;
@@ -155,8 +158,6 @@ section {
   border-color: var(--clr-2);
 }
 .borderi-vaarin {
-  margin-inline: auto;
-  width: min(90%, 70.5rem);
   border-radius: 1em;
   border-style: solid;
   border-width: 1.5em;
@@ -164,8 +165,6 @@ section {
   border-color: var(--clr-vaarin);
 }
 .borderi-oikein {
-  margin-inline: auto;
-  width: min(90%, 70.5rem);
   border-radius: 1em;
   border-style: solid;
   border-width: 1.5em;
