@@ -738,23 +738,42 @@
         {
           "tekstintyyppi": "palaute",
           "teksti": "Oikein!  Huijareiden on helppo saada tekemänsä nettisivusto Googlen hakutulosten kärkeen.  Kirjoita aina osoiteriville sivuston osoite, jolle haluat mennä, jos kyseessä on pankki tai muu sivusto, jolla on sinun yksityisiä tietojasi tai varojasi.   "
-        },
-
-        {
-          "tekstintyyppi": "tarina",
-          "teksti": "Kiitos, olet huipputyyppi! Autoit minua selviämään kryptovaluutan maailmassa, ja olenkin sen avulla onnistunut kerämään tarpeeksi varoja omakotitalon ostoon! Sinne voin nyt asettua rakkaideni kanssa. "
         }
-
       ],
       "sivuntyyppi": "palaute",
       "sivunvalinnat": [
         {
           "valinnantyyppi": "seuraava",
-          "valinnanteksti": "Palaa takaisin",
-          "seuraavasivu": 0
+          "valinnanteksti": "Seuraava sivu",
+          "seuraavasivu": 28
         }
       ]
-    }
+    },
+	{
+		"oikeavastaus": 0,
+		"sivunid": 28,
+		"sivunkuva": "",
+		"sivuntekstit": [
+		  {
+			"tekstintyyppi": "palaute",
+			"teksti": "Oikein!  Huijareiden on helppo saada tekemänsä nettisivusto Googlen hakutulosten kärkeen.  Kirjoita aina osoiteriville sivuston osoite, jolle haluat mennä, jos kyseessä on pankki tai muu sivusto, jolla on sinun yksityisiä tietojasi tai varojasi.   "
+		  },
+  
+		  {
+			"tekstintyyppi": "tarina",
+			"teksti": "Kiitos, olet huipputyyppi! Autoit minua selviämään kryptovaluutan maailmassa, ja olenkin sen avulla onnistunut kerämään tarpeeksi varoja omakotitalon ostoon! Sinne voin nyt asettua rakkaideni kanssa. "
+		  }
+  
+		],
+		"sivuntyyppi": "palaute",
+		"sivunvalinnat": [
+		  {
+			"valinnantyyppi": "seuraava",
+			"valinnanteksti": "Palaa takaisin",
+			"seuraavasivu": 0
+		  }
+		]
+	  }
 
 	]
 	
