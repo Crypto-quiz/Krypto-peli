@@ -29,21 +29,26 @@ function napsautusKuuntelija(tapahtuma) {
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1].seuraavasivu);
                 console.log(seuraavasivu);
                 vaihdaSivuunTiedot(seuraavasivu);
-                if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus == vastauksenNumero != 0) {
+                if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus != 0) {
+                    if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus == vastauksenNumero) {
                     
-                    poistaLuokka("borderi", "borderi");
-                    lisaaLuokka("borderi", "borderi-oikein");
-                    setTimeout(() => {
-                        poistaLuokka("borderi", "borderi-oikein");
-                        lisaaLuokka("borderi", "borderi"); }, 100000);
-                    console.log("oikein");
-                }
-                else {
-                /*
-                poistaLuokka(elementti, "");
-                lisaaLuokka(elementti, "");
-                */
-                    console.log("väärin");
+                        poistaLuokka("borderi", "borderi");
+                        lisaaLuokka("borderi", "borderi-oikein");
+                        setTimeout(() => {
+                            poistaLuokka("borderi", "borderi-oikein");
+                            lisaaLuokka("borderi", "borderi"); }, 500);
+                        console.log("oikein");
+                    }
+                    else {
+                        poistaLuokka("borderi", "borderi");
+                        lisaaLuokka("borderi", "borderi-vaarin");
+                        setTimeout(() => {
+                            poistaLuokka("borderi", "borderi-vaarin");
+                            lisaaLuokka("borderi", "borderi");
+                        }, 500);
+                        console.log("oikein");
+                        console.log("väärin");
+                    }
                 }
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus);
                 globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
