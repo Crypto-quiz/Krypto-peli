@@ -36,7 +36,7 @@ function napsautusKuuntelija(tapahtuma) {
                         lisaaLuokka("borderi", "borderi-oikein");
                         setTimeout(() => {
                             poistaLuokka("borderi", "borderi-oikein");
-                            lisaaLuokka("borderi", "borderi"); }, 500);
+                            lisaaLuokka("borderi", "borderi"); }, 5000);
                         console.log("oikein");
                     }
                     else {
@@ -45,7 +45,7 @@ function napsautusKuuntelija(tapahtuma) {
                         setTimeout(() => {
                             poistaLuokka("borderi", "borderi-vaarin");
                             lisaaLuokka("borderi", "borderi");
-                        }, 500);
+                        }, 5000);
                         console.log("oikein");
                         console.log("väärin");
                     }
