@@ -23,15 +23,35 @@ function napsautusKuuntelija(tapahtuma) {
 
                 vastauksenNumero = napsautetunnappulanID.substr(napsautetunnappulanID.length - 1);
                 console.log("vastaus " + vastauksenNumero);
-                poistaValinnat();
-                tyhjennaTekstit();
+                poistaVanhatElementit();
                 // selvenn�
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1].seuraavasivu);
+                console.log(seuraavasivu.sivunid);
                 console.log(seuraavasivu);
-
-                
                 vaihdaSivuunTiedot(seuraavasivu);
+                if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus != 0) {
+                    if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus == vastauksenNumero) {
+                    
+                        poistaLuokka("borderi", "borderi");
+                        lisaaLuokka("borderi", "borderi-oikein");
+                        setTimeout(() => {
+                            poistaLuokka("borderi", "borderi-oikein");
+                            lisaaLuokka("borderi", "borderi"); }, 1500);
+                        console.log("oikein");
+                    }
+                    else {
+                        poistaLuokka("borderi", "borderi");
+                        lisaaLuokka("borderi", "borderi-vaarin");
+                        setTimeout(() => {
+                            poistaLuokka("borderi", "borderi-vaarin");
+                            lisaaLuokka("borderi", "borderi");
+                        }, 1500);
+                        console.log("oikein");
+                        console.log("väärin");
+                    }
+                }
+                console.log(globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus);
                 globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
                 break;
 
@@ -40,14 +60,16 @@ function napsautusKuuntelija(tapahtuma) {
 
                 vastauksenNumero = 0;
                 console.log("seuraava");
-                poistaValinnat();
-                tyhjennaTekstit();
+
+                poistaVanhatElementit();
                 // selvenn�
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero].seuraavasivu);
-                console.log(seuraavasivu);
-
-
+                console.log(seuraavasivu.sivunid);
+                if (seuraavasivu.sivunid==28){
+                    $( "#wrap" ).load( "https://crypto-quiz.github.io/Krypto-peli/loppu.html" );
+                    break;
+                }
                 vaihdaSivuunTiedot(seuraavasivu);
                 globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
                 break;
