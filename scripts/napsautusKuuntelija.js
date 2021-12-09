@@ -29,30 +29,53 @@ function napsautusKuuntelija(tapahtuma) {
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1].seuraavasivu);
                 console.log(seuraavasivu);
                 vaihdaSivuunTiedot(seuraavasivu);
-                if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus != 0) {
-                    if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus == vastauksenNumero) {
-                    
-                        poistaLuokka("borderi", "borderi");
-                        lisaaLuokka("borderi", "borderi-oikein");
-                        setTimeout(() => {
-                            poistaLuokka("borderi", "borderi-oikein");
-                            lisaaLuokka("borderi", "borderi"); }, 5000);
-                        console.log("oikein");
-                    }
-                    else {
+
+                //Jos sivulla on yksi tai useampi oikea vastaus iteroidaan oikeiden vastausten läpi tarkistus onko valittu vastaus oikea.
+
+                //Jos valittu vastaus on oikea Ohjelma brake:aa ulos casesta muutettuaan luokka luokkaan borderi-oikein ja vaihdettua seuraavaan sivuun. 
+                //Asynkroninen lupaus ratkeaa 1, 5 sekunnin päästä palauttaen luokan takaisin normaaliksi.
+
+                //Jos valittua vastausta ei ole oikeissa vastauksissa Ohjelma brake:aa ulos casesta muutettuaan luokka luokkaan borderi-vaarin ja vaihdettua seuraavaan sivuun. 
+                //Asynkroninen lupaus ratkeaa 1, 5 sekunnin päästä palauttaen luokan takaisin normaaliksi
+
+                //Jos sivulla ei ole oikeaa vastausta luokkaa ei muuteta ja tiedot vaihdetaan seuraavan sivun tietoihin.
+                console.log("Pituus: " + globaalitMuuttujat.tamanhetkinensivu.sivunoikeatvastaukset.length);
+                
+                    if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeatvastaukset.length > 0) {
+                        for (let i = 0; globaalitMuuttujat.tamanhetkinensivu.sivunoikeatvastaukset.length > i; i++) {
+                            if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeatvastaukset[i] == vastauksenNumero) {
+                                poistaLuokka("borderi", "borderi");
+                                lisaaLuokka("borderi", "borderi-oikein");
+                                setTimeout(() => {
+                                    poistaLuokka("borderi", "borderi-oikein");
+                                    lisaaLuokka("borderi", "borderi");
+                                }, 1500);
+                                console.log("oikein");
+                                console.log(globaalitMuuttujat.tamanhetkinensivu.sivunoikeatvastaukset);
+                                globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
+                                break;
+                            }
+                        } 
                         poistaLuokka("borderi", "borderi");
                         lisaaLuokka("borderi", "borderi-vaarin");
                         setTimeout(() => {
                             poistaLuokka("borderi", "borderi-vaarin");
                             lisaaLuokka("borderi", "borderi");
-                        }, 5000);
-                        console.log("oikein");
-                        console.log("väärin");
+                        }, 1500);
+                        console.log("vaarin");
+                        console.log(globaalitMuuttujat.tamanhetkinensivu.sivunoikeatvastaukset);
+                        globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
+                        break;
                     }
-                }
-                console.log(globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus);
-                globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
-                break;
+                    else {
+                        console.log("Seuraava sivu!");
+                        console.log(globaalitMuuttujat.tamanhetkinensivu.sivunoikeatvastaukset);
+                        globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
+                        break;
+
+                    }
+                
+                
 
             case "seuraava":
 
