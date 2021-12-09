@@ -1,10 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 :root {
-  --clr-primary: #132152;
-  --clr-secondary: #fff;
-  --clr-bg: #434F7A;
+
+  --clr-1: #222831;
+  --clr-2: #393E46;
+  --clr-3: #008d94;
+  --clr-4: #EEEEEE;
+  --clr-oikein: #70be51;
+  --clr-vaarin: #eb6b40;
+/* 
+  --clr-1: #434F7A;
+  --clr-2: #333F6B;
+  --clr-3: #FF4A11;
+  --clr-4: #FFFFFF; */
+
+  /* --clr-1: #1B262C;
+  --clr-2: #0F4C75;
+  --clr-3: #3282B8;
+  --clr-4: #EAEAEA; */
+  
   --ff-primary: 'Poppins', sans-serif;
+  --ff-seconday: 'Poppins', sans-serif;
+
+  --clr-primary: #132152;
+  --clr-secondary: rgb(146, 112, 112);
+  --clr-bg: #434F7A;
 }
 
 
@@ -13,16 +33,13 @@
 *::after {
   box-sizing: border-box;
 }
-html {
-  font-size: min(max(1rem, 4vw), 16px);
-}
+
 
 body {
   font-family: var(--ff-primary);
-  font-weight: 400;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: var(--clr-bg);
+  background-color: var(--clr-1);
   min-width: 375px;
 }
 
@@ -31,16 +48,15 @@ h1,
 h2,
 h3,
 p {
+  font-family: var(--ff-primary);
   margin: 0;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--clr-primary);
-  font-family: var(--ff-primary);
-  font-weight: 900;
-  line-height: 1;
+  color: var(--clr-);
+  font-family: var(--ff-seconday);
 }
 
 h2,
@@ -54,17 +70,13 @@ img {
   max-width: 100%;
 }
 
-.text-center {
-  text-align: center;
-}
-
 header,
 section {
-  padding: 2rem 0;
+  padding:  0px;
   @media (min-width: 40em) {
     header,
     section {
-      padding: 7rem 0;
+      padding: 0px;
     }
   }
 }
@@ -103,10 +115,11 @@ section {
   outline: 0;
   border: 0;
   cursor: pointer;
-  background: radial-gradient( 100% 100% at 100% 0%, #434F7A 0%, #132152 100% );
+  background: radial-gradient( 100% 100% at 100% 0%, var(--clr-3) 0%, var(--clr-2) 100% );
   border-radius: 1em;
   color: #fff;
   font-size: 1em;
+  font-weight: bold;
   margin: 0.2em;
   padding: 1.5em;
   
@@ -115,7 +128,7 @@ section {
 
 }
 .button:hover {
-  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(32, 125, 201);
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px var(--clr-3);
       transform: translateY(-2px);
 }
 .button:active{
@@ -130,7 +143,7 @@ section {
 }
 
 .wrap {
-  background: #ffffff;
+  background: var(--clr-4);
   padding: 3%;
   border-radius: 1em;
   border-style: solid;
@@ -141,8 +154,22 @@ section {
   border-radius: 1em;
   border-style: solid;
   border-width: 1.5em;
-  background: #333F6B;
-  border-color: #333F6B;
+  background: var(--clr-2);
+  border-color: var(--clr-2);
+}
+.borderi-vaarin {
+  border-radius: 1em;
+  border-style: solid;
+  border-width: 1.5em;
+  background: var(--clr-vaarin);
+  border-color: var(--clr-vaarin);
+}
+.borderi-oikein {
+  border-radius: 1em;
+  border-style: solid;
+  border-width: 1.5em;
+  background: var(--clr-oikein);
+  border-color: var(--clr-oikein);
 }
 .kuvaikkuna {
   margin: auto;
@@ -162,10 +189,32 @@ section {
   text-align: center;
 }
 
-p.kysymys{
-  font-size: 18px;
+p.palaute::before{
+  content: "Palaute";
+  display: block;
+  color: var(--clr-3);
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 21px;
+  font-family: var(--ff-seconday);
 }
-p.kysymys::before {
+p.tarina::before{
+  content: "Tarina";
+  display: block;
+  color: var(--clr-3);
+  font-weight: bold;
+  font-size: 21px;
+  font-family: var(--ff-seconday);
+}
+p.kysymys::before{
+  content: "Kysymys";
+  display: block;
+  color: var(--clr-3);
+  font-weight: bold;
+  font-size: 21px;
+  font-family: var(--ff-seconday);
+}
+/* p.kysymys::before {
   content: "";
   display: block;
   background: url("../icons/question.svg") no-repeat;
@@ -173,5 +222,5 @@ p.kysymys::before {
   height: 20px;
   float: left;
   margin: 3px 6px 0 0;
-}
+} */
 

@@ -21,7 +21,7 @@
     <script src="scripts/Teksti.js"></script>
     <script src="scripts/Valinta.js"></script>
     <script src="scripts/elementtienOhjain.js"></script>
-    <script src="scripts/TiedonKasittelija.js"></script>
+    <script src="scripts/tiedonKasittelija.js"></script>
     <script src="scripts/napsautusKuuntelija.js"></script>
     <script src="scripts/aloitaKysely.js"></script>
 </head>
@@ -29,18 +29,19 @@
 <body>
     <!-- CONTENT -->
     <section>
-        <div class="container borderi">
+        <div id="borderi"class="container borderi">
             <div class="wrap">
                 <h2 class="otsikko">
                     <i class="fab fa-bitcoin"></i>
-                    Hurja Kryptovaluutta  seikkailupeli
+                    Jarmon Kryptovaluuttapeli
                 </h2>
                 <div class="split" >
                     <div class="kuvaikkuna" >
                         <img id="kuva" class="kuva" src="images/eka.svg" alt="svg image">
                     </div>
                     <div id="tekstit">
-                        <p id="palaute" class="palaute">Hei! Olen Jarmo, 35-vuotias automyyjä . Asun pienessä kerrostaloasunnossa
+                        <p id="palaute">
+                            Hei! Olen Jarmo, 35-vuotias automyyjä . Asun pienessä kerrostaloasunnossa
                             vaimoni ja kahden alakouluikäisten lasteni kanssa, ja kolmas lapsi on myös tuloillaan.
                             Olemme jo
                             kauan haaveilleet muutosta isoon omakotitaloon, mutta meillä ei ole varaa sellaiseen.
@@ -51,16 +52,18 @@
                             Pystyisitkö
                             sinä auttamaan saamaan minulle ja perheelleni uuden hienon talon?
                         </p>
-                        <p id="kysymys" class="kysymys">
+                        <h3 id="kuinka">
+                            <i class="fas fa-question-circle"></i> Kuinka pelaat peliä?
+                        </h3>
+                        <p id="kysymys">
                                 Sinun tehtäväsi on auttaa Jarmoa sijoittamaan kryptovaluuttakaupoilla.
                                 Sinulta
                                 kysytään erilaisia kysymyksiä kryptovaluuttoihin liittyen ja vastauksesi vaikuttavat siihen,
                                 miten Jarmolle käy. Pohdi siis kysymyksiä huolella. Onnea peliin!
                         </p>
                     </div>
-
                 </div>
-                <div class="split">
+                <div>
                     <div class="nappulat" id="nappulat">
                         <button class="button" id="aloitaNappula" onclick="aloitaKysely()">
                             <i class='uil uil-file-alt'></i> Aloita Pelaamaan!

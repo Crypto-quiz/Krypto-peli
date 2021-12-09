@@ -28,9 +28,24 @@ function napsautusKuuntelija(tapahtuma) {
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero -1].seuraavasivu);
                 console.log(seuraavasivu);
-
-                
                 vaihdaSivuunTiedot(seuraavasivu);
+                if (globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus == vastauksenNumero != 0) {
+                    
+                    poistaLuokka("borderi", "borderi");
+                    lisaaLuokka("borderi", "borderi-oikein");
+                    setTimeout(() => {
+                        poistaLuokka("borderi", "borderi-oikein");
+                        lisaaLuokka("borderi", "borderi"); }, 100000);
+                    console.log("oikein");
+                }
+                else {
+                /*
+                poistaLuokka(elementti, "");
+                lisaaLuokka(elementti, "");
+                */
+                    console.log("väärin");
+                }
+                console.log(globaalitMuuttujat.tamanhetkinensivu.sivunoikeavastaus);
                 globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
                 break;
 

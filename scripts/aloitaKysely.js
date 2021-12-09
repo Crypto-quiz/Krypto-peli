@@ -14,6 +14,7 @@ function aloitaKysely() {
     poistaElementti("palaute");
     poistaElementti("tarina");
     poistaElementti("kysymys");
+    poistaElementti("kuinka");
 
     // Anna ID:t tekstikent�lle ja otsikolle piilotusta varten.
     //piilotaElementti("tekstikentta");
