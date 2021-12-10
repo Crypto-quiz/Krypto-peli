@@ -87,7 +87,10 @@ function napsautusKuuntelija(tapahtuma) {
                 // selvenn�
                 console.log(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero]);
                 seuraavasivu = tiedonkasittelija.getSivu(globaalitMuuttujat.tamanhetkinensivu.sivunvalinnat[vastauksenNumero].seuraavasivu);
-
+                if (seuraavasivu.sivunid==28){
+                    $( "#wrap" ).load( "loppu.html" );
+                    break;
+                }
                 vaihdaSivuunTiedot(seuraavasivu);
                 globaalitMuuttujat.tamanhetkinensivu = seuraavasivu;
                 break;
