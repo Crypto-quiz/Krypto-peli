@@ -1,7 +1,7 @@
 {
-	"sivut": [
+  "sivut": [
     {
-      "oikeavastaus": 2,
+      "oikeatvastaukset": [ 2 ],
       "sivunid": 0,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -31,7 +31,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 1,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -53,7 +53,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 2,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "oikeavastaus": 1,
+      "oikeatvastaukset": [ 1 ],
       "sivunid": 3,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -115,7 +115,7 @@
     },
 
     {
-      "oikeavastaus": 1,
+      "oikeatvastaukset": [ 1 ],
       "sivunid": 4,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -145,6 +145,7 @@
     },
 
     {
+      "oikeatvastaukset": [ 1, 2 ],
       "sivunid": 5,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -166,7 +167,6 @@
         {
           "valinnantyyppi": "vastaus1",
           "valinnanteksti": "Virtuaalilompakko ",
-          "oikeavastaus": true,
           "seuraavasivu": 9
         },
         {
@@ -178,6 +178,7 @@
     },
 
     {
+      "oikeatvastaukset": [],
       "sivunid": 6,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -197,7 +198,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [ 1 ],
       "sivunid": 7,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -230,7 +231,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 8,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -250,7 +251,7 @@
     },
 
     {
-      "oikeavastaus": 2,
+      "oikeatvastaukset": [ 2 ],
       "sivunid": 9,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -283,7 +284,7 @@
     },
 
     {
-      "oikeavastaus": 2,
+      "oikeatvastaukset": [ 2 ],
       "sivunid": 10,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -312,7 +313,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 11,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -332,7 +333,7 @@
     },
 
     {
-      "oikeavastaus": 2,
+      "oikeatvastaukset": [ 2 ],
       "sivunid": 12,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -365,7 +366,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 13,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -386,7 +387,7 @@
     },
 
     {
-      "oikeavastaus": 2,
+      "oikeatvastaukset": [],
       "sivunid": 14,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -419,7 +420,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 15,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -439,7 +440,7 @@
     },
 
     {
-      "oikeavastaus": 2,
+      "oikeatvastaukset": [ 2 ],
       "sivunid": 16,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -473,7 +474,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 17,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -493,7 +494,7 @@
     },
 
     {
-      "oikeavastaus": 1,
+      "oikeatvastaukset": [ 1 ],
       "sivunid": 18,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -526,7 +527,7 @@
     },
 
     {
-      "oikeavastaus": 2,
+      "oikeatvastaukset": [ 2 ],
       "sivunid": 19,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -565,7 +566,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 20,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -585,7 +586,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 21,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -605,7 +606,7 @@
     },
 
     {
-      "oikeavastaus": 1,
+      "oikeatvastaukset": [ 1 ],
       "sivunid": 22,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -638,7 +639,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 23,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -658,7 +659,7 @@
     },
 
     {
-      "oikeavastaus": 2,
+      "oikeatvastaukset": [ 2 ],
       "sivunid": 24,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -691,7 +692,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 25,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -711,7 +712,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 26,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -731,7 +732,7 @@
     },
 
     {
-      "oikeavastaus": 0,
+      "oikeatvastaukset": [],
       "sivunid": 27,
       "sivunkuva": "",
       "sivuntekstit": [
@@ -749,33 +750,33 @@
         }
       ]
     },
-	{
-		"oikeavastaus": 0,
-		"sivunid": 28,
-		"sivunkuva": "",
-		"sivuntekstit": [
-		  {
-			"tekstintyyppi": "palaute",
-			"teksti": "Oikein!  Huijareiden on helppo saada tekemänsä nettisivusto Googlen hakutulosten kärkeen.  Kirjoita aina osoiteriville sivuston osoite, jolle haluat mennä, jos kyseessä on pankki tai muu sivusto, jolla on sinun yksityisiä tietojasi tai varojasi.   "
-		  },
-  
-		  {
-			"tekstintyyppi": "tarina",
-			"teksti": "Kiitos, olet huipputyyppi! Autoit minua selviämään kryptovaluutan maailmassa, ja olenkin sen avulla onnistunut kerämään tarpeeksi varoja omakotitalon ostoon! Sinne voin nyt asettua rakkaideni kanssa. "
-		  }
-  
-		],
-		"sivuntyyppi": "palaute",
-		"sivunvalinnat": [
-		  {
-			"valinnantyyppi": "seuraava",
-			"valinnanteksti": "Palaa takaisin",
-			"seuraavasivu": 0
-		  }
-		]
-	  }
+    {
+      "oikeatvastaukset": [],
+      "sivunid": 28,
+      "sivunkuva": "",
+      "sivuntekstit": [
+        {
+          "tekstintyyppi": "palaute",
+          "teksti": "Oikein!  Huijareiden on helppo saada tekemänsä nettisivusto Googlen hakutulosten kärkeen.  Kirjoita aina osoiteriville sivuston osoite, jolle haluat mennä, jos kyseessä on pankki tai muu sivusto, jolla on sinun yksityisiä tietojasi tai varojasi.   "
+        },
 
-	]
-	
-		
+        {
+          "tekstintyyppi": "tarina",
+          "teksti": "Kiitos, olet huipputyyppi! Autoit minua selviämään kryptovaluutan maailmassa, ja olenkin sen avulla onnistunut kerämään tarpeeksi varoja omakotitalon ostoon! Sinne voin nyt asettua rakkaideni kanssa. "
+        }
+
+      ],
+      "sivuntyyppi": "palaute",
+      "sivunvalinnat": [
+        {
+          "valinnantyyppi": "seuraava",
+          "valinnanteksti": "Palaa takaisin",
+          "seuraavasivu": 0
+        }
+      ]
+    }
+
+  ]
+
+
 }
